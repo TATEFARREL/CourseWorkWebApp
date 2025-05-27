@@ -1,0 +1,79 @@
+﻿@{
+    ViewData["Title"] = "Admin Panel";
+}
+
+<div class="container">
+    <h2>Admin Dashboard</h2>
+
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tours</h5>
+                    <p class="card-text">Manage all tours and itineraries.</p>
+                    <a asp-controller="AdminTour" asp-action="Index" class="btn btn-primary">Manage Tours</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Buses</h5>
+                    <p class="card-text">Manage bus fleet and availability.</p>
+                    <a asp-controller="AdminBus" asp-action="Index" class="btn btn-primary">Manage Buses</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Applications</h5>
+                    <p class="card-text">View and process tour applications.</p>
+                    <a asp-controller="AdminTourApplication" asp-action="Index" class="btn btn-primary">View Applications</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Tour Compositions</h5>
+                <p class="card-text">Manage attractions for each tour.</p>
+                <a asp-controller="AdminTourComposition" asp-action="Index" class="btn btn-primary">Manage Compositions</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Attractions</h5>
+                    <p class="card-text">Manage tourist attractions.</p>
+                    <a asp-controller="AdminAttraction" asp-action="Index" class="btn btn-primary">Manage Attractions</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Cities</h5>
+                    <p class="card-text">Manage cities and locations.</p>
+                    <a asp-controller="AdminCity" asp-action="Index" class="btn btn-primary">Manage Cities</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Countries</h5>
+                    <p class="card-text">Manage countries and regions.</p>
+                    <a asp-controller="AdminCountry" asp-action="Index" class="btn btn-primary">Manage Countries</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
